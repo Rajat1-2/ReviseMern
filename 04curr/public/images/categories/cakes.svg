@@ -1,0 +1,17 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c0a09"/>
+      <stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+    <linearGradient id="cake" x1="290" y1="220" x2="650" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5f5f4"/>
+      <stop offset="1" stop-color="#d6d3d1"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" rx="28" fill="url(#bg)"/>
+  <rect x="300" y="320" width="300" height="140" rx="22" fill="url(#cake)" opacity="0.92"/>
+  <rect x="330" y="250" width="240" height="90" rx="20" fill="url(#cake)" opacity="0.98"/>
+  <path d="M345 300 C 390 275, 435 325, 480 300 C 525 275, 570 325, 615 300" stroke="#fbbf24" stroke-opacity="0.45" stroke-width="12" stroke-linecap="round"/>
+  <text x="50" y="560" fill="#fbbf24" font-size="34" font-family="Playfair Display">Cakes</text>
+</svg>

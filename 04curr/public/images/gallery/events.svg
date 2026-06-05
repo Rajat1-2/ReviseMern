@@ -1,0 +1,16 @@
+<svg width="1000" height="700" viewBox="0 0 1000 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c0a09"/>
+      <stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="700" rx="28" fill="url(#bg)"/>
+  <g opacity="0.2">
+    <path d="M220 480 C 340 360, 420 520, 540 400 C 660 280, 740 360, 860 260" stroke="#fbbf24" stroke-opacity="0.4" stroke-width="90"/>
+    <circle cx="320" cy="230" r="10" fill="#fbbf24"/>
+    <circle cx="380" cy="210" r="6" fill="#fbbf24" opacity="0.75"/>
+    <circle cx="440" cy="240" r="8" fill="#fbbf24" opacity="0.85"/>
+  </g>
+  <text x="50" y="640" fill="#fbbf24" font-size="34" font-family="Playfair Display">Events</text>
+</svg>

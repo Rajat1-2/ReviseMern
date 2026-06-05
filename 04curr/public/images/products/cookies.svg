@@ -1,0 +1,23 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c0a09"/>
+      <stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+    <radialGradient id="cookie" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(410 320) rotate(90) scale(180)">
+      <stop stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#b45309"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="28" fill="url(#bg)"/>
+  <circle cx="380" cy="330" r="150" fill="url(#cookie)"/>
+  <circle cx="520" cy="300" r="135" fill="url(#cookie)" opacity="0.92"/>
+  <g fill="#0c0a09" opacity="0.35">
+    <circle cx="330" cy="290" r="10"/>
+    <circle cx="420" cy="360" r="12"/>
+    <circle cx="500" cy="270" r="9"/>
+    <circle cx="470" cy="340" r="10"/>
+    <circle cx="380" cy="410" r="9"/>
+  </g>
+  <text x="40" y="540" fill="#fbbf24" font-size="26" font-family="Playfair Display">Butter Cookies</text>
+</svg>

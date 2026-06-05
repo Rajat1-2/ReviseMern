@@ -1,0 +1,17 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c0a09"/>
+      <stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+    <radialGradient id="gold" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 260) rotate(90) scale(280)">
+      <stop stop-color="#fbbf24" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="620" rx="28" fill="url(#bg)"/>
+  <rect width="900" height="620" rx="28" fill="url(#gold)"/>
+  <circle cx="410" cy="330" r="150" fill="#b45309" opacity="0.9"/>
+  <circle cx="540" cy="300" r="135" fill="#fbbf24" opacity="0.85"/>
+  <text x="50" y="560" fill="#fbbf24" font-size="34" font-family="Playfair Display">Bakery Items</text>
+</svg>

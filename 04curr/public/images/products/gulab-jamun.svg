@@ -1,0 +1,20 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c0a09"/>
+      <stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+    <radialGradient id="jam" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(410 300) rotate(90) scale(180)">
+      <stop stop-color="#7c2d12"/>
+      <stop offset="1" stop-color="#431407"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" rx="28" fill="url(#bg)"/>
+  <g opacity="0.18">
+    <path d="M120 480 C 260 370, 360 520, 520 410 C 640 330, 720 350, 820 290" stroke="#fbbf24" stroke-opacity="0.3" stroke-width="80"/>
+  </g>
+  <circle cx="330" cy="320" r="120" fill="url(#jam)"/>
+  <circle cx="470" cy="290" r="135" fill="url(#jam)" opacity="0.96"/>
+  <circle cx="420" cy="390" r="110" fill="url(#jam)" opacity="0.92"/>
+  <text x="40" y="540" fill="#fbbf24" font-size="26" font-family="Playfair Display">Gulab Jamun</text>
+</svg>

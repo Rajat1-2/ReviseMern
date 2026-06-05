@@ -1,0 +1,43 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0c0a09"/>
+      <stop offset="0.55" stop-color="#1c1917"/>
+      <stop offset="1" stop-color="#0c0a09"/>
+    </linearGradient>
+    <radialGradient id="gold" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(420 220) rotate(35) scale(700 430)">
+      <stop stop-color="#fbbf24" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cream" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1160 520) rotate(-20) scale(780 520)">
+      <stop stop-color="#f5f5f4" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#f5f5f4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop stop-color="#fbbf24" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#fbbf24" stop-opacity="0.14"/>
+      <stop offset="0.6" stop-color="#fbbf24" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#gold)"/>
+  <rect width="1600" height="900" fill="url(#cream)"/>
+
+  <g opacity="0.55">
+    <path d="M-20 710 C 240 610, 380 830, 650 720 C 880 625, 980 670, 1260 620 C 1420 590, 1540 640, 1620 580" stroke="url(#shine)" stroke-width="120"/>
+  </g>
+
+  <g opacity="0.18">
+    <circle cx="1280" cy="220" r="140" stroke="#fbbf24" stroke-width="2"/>
+    <circle cx="1280" cy="220" r="220" stroke="#fbbf24" stroke-width="2"/>
+    <circle cx="1280" cy="220" r="320" stroke="#fbbf24" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.22">
+    <rect x="180" y="190" width="360" height="460" rx="28" stroke="#f5f5f4" stroke-opacity="0.35"/>
+    <rect x="220" y="240" width="360" height="460" rx="28" stroke="#fbbf24" stroke-opacity="0.35"/>
+  </g>
+
+  <text x="120" y="130" fill="#fbbf24" font-size="18" font-family="Inter" letter-spacing="4">BISLA'S SWEETS &amp; BAKERY</text>
+</svg>

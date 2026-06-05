@@ -1,0 +1,20 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c0a09"/>
+      <stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="250" y1="260" x2="560" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5f5f4"/>
+      <stop offset="1" stop-color="#d6d3d1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="28" fill="url(#bg)"/>
+  <g opacity="0.2">
+    <rect x="150" y="150" width="500" height="320" rx="32" stroke="#fbbf24" stroke-opacity="0.25"/>
+  </g>
+  <path d="M260 400 L420 250 L560 400 Z" fill="#3f1d0b"/>
+  <path d="M300 400 L420 285 L530 400 Z" fill="url(#cream)" opacity="0.96"/>
+  <path d="M260 400 H560" stroke="#fbbf24" stroke-opacity="0.4" stroke-width="8" stroke-linecap="round"/>
+  <text x="40" y="540" fill="#fbbf24" font-size="26" font-family="Playfair Display">Pastries</text>
+</svg>

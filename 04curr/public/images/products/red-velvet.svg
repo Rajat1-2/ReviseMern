@@ -1,0 +1,19 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c0a09"/>
+      <stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+    <linearGradient id="vel" x1="250" y1="220" x2="560" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7f1d1d"/>
+      <stop offset="1" stop-color="#450a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="28" fill="url(#bg)"/>
+  <g opacity="0.18">
+    <path d="M100 470 C 240 360, 360 520, 520 410 C 640 330, 720 350, 820 290" stroke="#f5f5f4" stroke-opacity="0.2" stroke-width="80"/>
+  </g>
+  <rect x="260" y="240" width="300" height="190" rx="22" fill="url(#vel)"/>
+  <rect x="290" y="200" width="240" height="70" rx="18" fill="#f5f5f4" opacity="0.92"/>
+  <text x="40" y="540" fill="#fbbf24" font-size="26" font-family="Playfair Display">Red Velvet</text>
+</svg>
