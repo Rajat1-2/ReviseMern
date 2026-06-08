@@ -7,7 +7,9 @@ export const themeContext=createContext({
 })
 // wrap krne ke liye
 export const ThemeProvider = themeContext.Provider
-// jb bbhi values chaiye hongi yha se le lunga
+// jb bbhi values chaiye hongi yha se le lunga hook bna diya
 export default function useTheme(){
     return useContext(themeContext)
 }
+
+

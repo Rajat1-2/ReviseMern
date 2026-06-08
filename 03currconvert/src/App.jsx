@@ -45,7 +45,7 @@ function App() {
 								amount={amount}
 								CurrOptions={options}
 								onCurrChange={(currency) => setFrom(currency)}
-                onAmountChange={(amount)=> setAmount(amount)}
+                                onAmountChange={(amount)=> setAmount(amount)}
 								selectCurr={from}
 							/>
 						</div>

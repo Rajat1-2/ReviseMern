@@ -7,7 +7,7 @@ function Login() {
     const{setuser}=useContext(UserContext);
     // setuser mujhe Usercontext se mil rha H  
 
-// data bhjna h ese
+   // data bhjna h ese
 	const handlesubmit = (e) => {
         // e.preventDefault()
         setuser({uname,pass});
