@@ -2,6 +2,7 @@ import { createContext , useContext } from "react";
 export const TodoContext= createContext({
                     //  default values
                     // saare todo ki id se baat krni h 
+                    // array of objects => todos
                     todos:[
                         {
                             id:1,
@@ -9,7 +10,6 @@ export const TodoContext= createContext({
                             completed:false,
 
                         },
-                        {},{}
                     ],
                     // functionaity me definition nhi likhte bs unke naam likhte h
                     // functionlity app.jsx me likhege
