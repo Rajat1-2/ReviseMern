@@ -1,6 +1,9 @@
 import conf from "../conf/conf";
 import { Client, ID, Databases, Storage, TablesDB, Query } from "appwrite";
 
+//appwrite.io/docs/products/storage/quick-start
+
+
 // import { Client, ID, TablesDB } from "appwrite";
 
 // const client = new Client()
@@ -25,7 +28,7 @@ import { Client, ID, Databases, Storage, TablesDB, Query } from "appwrite";
 // 	}
 // );
 
-export class Service {
+https: export class Service {
 	client = new Client();
 	databases;
 	bucket;
@@ -143,13 +146,10 @@ export class Service {
 		}
 	}
 
-    // fast h to no use of async
-	 getpreviewFile(fildId) {
+	// fast h to no use of async
+	getpreviewFile(fildId) {
 		try {
-			return this.bucket.getFilePreview(
-				conf.appwriteBucketId,
-				fileId,
-			);
+			return this.bucket.getFilePreview(conf.appwriteBucketId, fileId);
 		} catch (error) {
 			throw error;
 		}
