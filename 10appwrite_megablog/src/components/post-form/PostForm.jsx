@@ -42,7 +42,7 @@ function PostForm({ post }) {
             data.featuredImage=fileId
             const dbPost=await service.createPost({
                 ...data,
-                userId=userData.$id
+                userId:userData.$id
             })
             if(dbPost){
                 navigate(`/post/${dbPost.$id}`)
@@ -121,4 +121,5 @@ function PostForm({ post }) {
             </div>
         </form>
     );
-}f
+}
+export default PostForm;

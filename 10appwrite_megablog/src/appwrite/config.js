@@ -28,7 +28,7 @@ import { Client, ID, Databases, Storage, TablesDB, Query } from "appwrite";
 // 	}
 // );
 
-https: export class Service {
+export class Service {
 	client = new Client();
 	databases;
 	bucket;
@@ -38,8 +38,8 @@ https: export class Service {
 			.setEndpoint(conf.appwriteUrl)
 			.setProject(conf.appwriteProjectId);
 
-		this.databases = new TablesDB(client);
-		this.bucket = new Storage(client);
+		this.databases = new TablesDB(this.client);
+		this.bucket = new Storage(this.client);
 	}
 
 	async createPost({ title, slug, content, featuredimage, status, userId }) {
