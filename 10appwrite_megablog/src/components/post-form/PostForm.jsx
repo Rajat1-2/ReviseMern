@@ -9,7 +9,10 @@ function PostForm({ post }) {
   const { register, handleSubmit, watch, setValue, control, getValues } =
     useForm({
       defaultValues: {
-        title: post?.title || " ",
+        title: post?.title || "",
+        slug: post?.slug || "",
+        content: post?.content || "",
+        status: post?.status || "active",
       },
     });
   const navigate = useNavigate();
@@ -24,9 +27,10 @@ function PostForm({ post }) {
       if (file) {
         service.deleteFile(post.featuredImage);
       }
+
       const dbPost = await service.updatePost(post.$id, {
         ...data,
-        featuredimage: file ? file.$id : undefined,
+        featuredImage: file ? file.$id : undefined,
       });
 
       if (dbPost) {
@@ -40,6 +44,7 @@ function PostForm({ post }) {
         if(file){
             const fileId=file.$id
             data.featuredImage=fileId
+            console.log(data);
             const dbPost=await service.createPost({
                 ...data,
                 userId:userData.$id

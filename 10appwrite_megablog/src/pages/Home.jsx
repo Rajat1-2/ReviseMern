@@ -5,13 +5,31 @@ import { Container, PostCard } from "../components";
 function Home() {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    service.getPosts().then(posts => {
-      if (posts) {
-        setPosts(posts.documents);
-      }
-    });
-  }, []);
+ useEffect(() => {
+   service
+     .getPosts()
+     .then(response => {
+       if (response) {
+         setPosts(response.rows);
+       }
+     })
+     .catch(error => {
+       console.log(error);
+     });
+ }, []);
+
+  // ! just the clg of posts
+
+  // useEffect(() => {
+  //   service
+  //     .getPosts()
+  //     .then(posts => {
+  //       console.log(posts);
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
   if (posts.length === 0) {
     return (

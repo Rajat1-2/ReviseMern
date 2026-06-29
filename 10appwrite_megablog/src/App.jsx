@@ -1,46 +1,44 @@
-import { useState,useEffect } from 'react'
-import './App.css'
-import { useDispatch } from 'react-redux'
-import conf from './conf/conf'
-import { Header,Footer } from './components';
-import authService from './appwrite/auth';
-import { login,logout } from './store/authSlice';
-import {Outlet} from 'react-router-dom'
-
+import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import "./App.css";
+import authService from "./appwrite/auth";
+import { login, logout } from "./store/authSlice";
+import { Footer, Header } from "./components";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const [loading, setLoading] = useState(true)
-  const dispatch=useDispatch()
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    authService.getCurrentUser()
-    .then((userdata)=>{
-      if(userdata){
-        dispatch(login({ userData }));
-      }else{
+    authService
+      .getCurrentUser()
+      .then(userData => {
+        if (userData) {
+          dispatch(login({ userData }));
+        } else {
+          dispatch(logout());
+        }
+      })
+      .catch(() => {
         dispatch(logout());
-      }
-    })
-    .finally(()=> setLoading(false))
-  }, [])
-  
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
 
-  // console.log(import.meta.env.VITE_APPWRITE_URL);
-  // via vite use import.meta.env.
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
-      <div className='w-full block justify-center'>
-        <Header/>
+    <div className="min-h-screen flex flex-wrap content-between bg-gray-400">
+      <div className="w-full block">
+        <Header />
         <main>
-          <Outlet/>
+          <Outlet />
         </main>
-        <Footer/>
-
+        <Footer />
       </div>
     </div>
-    
-  ) : (null)
-
+  ) : null;
 }
 
-export default App
+export default App;

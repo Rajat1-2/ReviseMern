@@ -5,13 +5,18 @@ import { useState, useEffect } from "react";
 
 function AllPosts() {
   const [posts, setPosts] = useState([]);
-  useEffect(() => {
-     service.getPosts([]).then(posts => {
-       if (posts) {
-         setPosts(posts.documents);
+ useEffect(() => {
+   service
+     .getPosts([])
+     .then(response => {
+       if (response) {
+         setPosts(response.rows);
        }
+     })
+     .catch(error => {
+       console.error(error);
      });
-  }, [third]);
+ }, []);
 
  
 
@@ -19,7 +24,7 @@ function AllPosts() {
     <div className="w-full py-8">
       <Container>
         <div className="flex flex-wrap">
-          {posts.map(post => (
+          {posts.map((post) => (
             <div key={post.$id} className="p-2 w-1/4">
                 <PostCard post={post}/>
             </div>
