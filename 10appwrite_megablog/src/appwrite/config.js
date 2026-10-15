@@ -176,8 +176,17 @@ export class Service {
     this.databases = new TablesDB(this.client);
     this.bucket = new Storage(this.client);
   }
-
-  async createPost({ title, slug, content, featuredimage, status, userId }) {
+    
+  async createPost({ title, slug, content, featuredImage, status, userId }) {
+     alert("SERVICE CREATEPOST CALLED");
+     console.log("🔥 service received:", {
+       title,
+       slug,
+       content,
+       featuredImage,
+       status,
+       userId,
+     });
     try {
       return await this.databases.createRow({
         databaseId: conf.appwriteDatabaseId,
@@ -187,7 +196,7 @@ export class Service {
         data: {
           title,
           content,
-          featuredimage,
+          featuredImage,
           status,
           userid: userId, // matches your Appwrite column
         },
@@ -197,7 +206,7 @@ export class Service {
     }
   }
 
-  async updatePost(slug, { title, content, featuredimage, status }) {
+  async updatePost(slug, { title, content, featuredImage, status }) {
     try {
       return await this.databases.updateRow({
         databaseId: conf.appwriteDatabaseId,
@@ -207,7 +216,7 @@ export class Service {
         data: {
           title,
           content,
-          featuredimage,
+          featuredImage,
           status,
         },
       });

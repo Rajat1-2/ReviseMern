@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { Input, Select, Button, RTE } from "../index";
-import service from "../../appwrite/config";
+import service, { Service } from "../../appwrite/config";
 import { data, Navigate, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -108,7 +108,7 @@ function PostForm({ post }) {
                 {post && (
                     <div className="w-full mb-4">
                         <img
-                            src={appwriteService.getFilePreview(post.featuredImage)}
+                            src={service.getFilePreview(post.featuredImage)}
                             alt={post.title}
                             className="rounded-lg"
                         />
